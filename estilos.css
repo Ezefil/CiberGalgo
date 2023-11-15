@@ -1,0 +1,392 @@
+*{
+box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+        background: #000000;
+        color: #ffffff;
+
+        background-color: #050000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23990f0f' fill-opacity='.4'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        font-size: 16px;
+
+}
+/*
+MINUTO Ezefil.com /// proyecto de desarrollo de aplicaciones web 2023-2 itt
+*/
+a{
+  color: #ffffff;
+  text-decoration: azure;  
+}
+
+UL{
+    list-style: upper-alpha;
+
+}
+/*
+margen para las imagenes y texto alineación
+*/
+.container {
+
+    width:90%;
+    margin : auto;
+
+
+}
+
+/* estilos de navegacióN*/
+.nav-main {
+
+font-size: 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+padding: 20px 0;
+}
+
+/*
+pie de pagina
+
+*/
+footer {
+    background-color: #0e0e42;
+    color: white;
+    margin: 0; /* Eliminar los márgenes predeterminados */
+    padding: 20px; /* Agregar relleno para separar el contenido del borde */
+    text-align: center;
+}
+
+
+
+#footer-content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+#footer-logo {
+    margin-top: 20px;
+}
+
+#footer-logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/*Pie de pagina*/
+.nave-brand {
+   
+    width: 50px;
+    
+}
+/*Navegacion izquierda*/
+.nav-main ul {
+    display: flex;
+
+}
+.nav-main ul li
+{
+    padding: 10px;
+}
+
+.nav-main ul li a:hover
+{
+    padding: 2px;
+}
+.nav-main ul li a:hover
+{
+ border-bottom: 2px solid #ffffff;
+
+}
+
+.nav-main ul.nav-menu{
+    flex: 1; 
+    margin-left: 20px;
+}
+/*SHOWCASE*/
+
+hr{
+    margin: 25px 0;
+}
+.showcase {
+    width: 100%;
+    background: url('./girl.jpg') no-repeat center center/cover ;
+
+    height: 550px;
+
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.btn {
+    cursor:  pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size: 23px;
+    border: 1px solid #ffffff;
+    margin: 10px 0 ;
+
+}
+
+.btn:hover
+{
+    opacity: .8 ;
+}
+
+.showcase h2,
+.showcase p 
+{
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 700px) {
+
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: fixed; /* Cambiamos a posición fija para que esté en el lado derecho */
+        top: 0;
+        left: 0; /* Cambiamos left a right para colocarlo en la parte derecha */
+        background: #2f3640;
+        width: 200px; /* Ajusta el ancho de la columna según tus necesidades */
+        padding: 30px;
+        opacity: 0.9;  
+        transform: translateX(-400px); /* Vuelve a la posición original en el eje X */
+   
+            transition: transform 1.5s ease-in-out;         
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .menu-btn {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 30px;
+        z-index: 2;
+        display: none;
+    }
+
+    .nav-main ul.nav-menu li {
+        padding: 10px;
+        font-size: 24px ;
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards-banner-one,
+    .cards-banner-two .content
+    {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+
+   body {background-color: #1f0dc0;}
+
+}
+
+.news-cards img {
+    height: 270px;
+}
+
+.cards-banner-one .content,
+.cards-banner-two .content{
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.news-cards {
+
+    grid-template-columns: repeat(2,1fr);
+}
+.cards-banner-one .content,
+.cards-banner-two .content
+{
+    width: 80%;
+}
+
+.news-cards
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin: 10px,0;
+}
+
+
+.news-cards img
+{
+width:  100%;
+height: 180px; 
+}
+
+.news-cards h3 
+{
+    font-size: 25px;
+    margin: 10px 0; 
+}
+.news-cards a {
+    
+    padding: 10px 0;
+    color: #f2f2f2f2;
+    text-transform: uppercase ;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover{
+    text-decoration: underline;
+}
+
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url(STREET1.jpg)no-repeat center center/cover;  
+    margin-bottom: 40px;
+}
+
+
+.cards-banner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2 {
+    margin:  10px 0 20px 0;
+    opacity: 60%;  
+}
+
+.cards-banner-two{
+
+    width: 100%;
+    height: 450px;
+    
+    background: url(street.jpg) no-repeat center center/cover;   
+
+}
+
+.cards-banner-two .content{
+    width: 50%;
+    padding: 100px 0 0 30px;  
+    
+}
+
+
+
+
+/* Estilos para el menú desplegable de "Recursos" */
+.nav-menu .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(119, 17, 187, 0.8) ;/* Cambia el color de fondo según tus preferencias */
+    z-index: 1;
+}
+
+.nav-menu .sub-menu li {
+    display: block;
+}
+
+.nav-menu .sub-menu a {
+    color: #fff;
+}
+
+.nav-menu .nav-item:hover .sub-menu {
+    display: block;
+}
+
+
+/*
+pARA EL FORMULARIO
+*/
+.form-register {
+    background-color: #222; /* Fondo oscuro para un aspecto futurista */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra suave */
+    color: #fff; /* Texto en color blanco */
+    font-family: Arial, sans-serif; /* Fuente */
+    margin: 70px 100px;
+}
+
+.form-register input, .form-register textarea {
+    background-color: #333; /* Fondo para campos de entrada */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados para campos de entrada */
+    padding: 10px;
+    margin: 5px 0;
+    color: #fff; /* Texto en color blanco */
+}
+
+.form-register input[type="submit"] {
+    background-color: #0074cc; /* Color de botón futurista */
+    color: #fff; /* Texto en color blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados para el botón */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-register p {
+    font-size: 25px; /* Tamaño de fuente */
+}
+
+.form-register a {
+    color: #0074cc; /* Color de enlace futurista */
+    text-decoration: palevioletred;
+}
+
+.form-register a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*
+Para el pie de pagina
+*/
+.PieP {
+    margin-top: 20px; /* Puedes ajustar el valor según tus necesidades */
+    margin-bottom: 20px; /* Puedes ajustar el valor según tus necesidades */
+    padding: 10px; /* Puedes ajustar el relleno según tus necesidades */
+    text-align: center; /* Puedes ajustar la alineación del texto según tus necesidades */
+  }
+
+/*
+log in
+*/
