@@ -1,0 +1,15 @@
+#contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px; /* Margen en los extremos */
+  }
+  
+  .imagenestyle {
+    margin-right: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .imagenestyle img {
+    width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+    height: auto;
+  }

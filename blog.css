@@ -1,0 +1,144 @@
+body {
+    margin: 30;
+    padding: 35;
+    font-family: 'Helvetica', sans-serif;
+    
+    color: #fff;
+}
+
+
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+#title {
+    font-size: 2rem; /* Aumentamos el tamaño de fuente a 4rem */
+    font-weight: bold;
+    letter-spacing: 20px; /* Espaciado entre letras al inicio */
+    color: #fff; /* Texto blanco */
+}
+
+#description {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #fff; /* Texto blanco */
+}
+
+.bar  {
+    background: rgba(235, 181, 6, 0.5); /* Fondo de la barra de navegación transparente */
+    position: fixed; /* Cambio a posición fija para que la barra sea siempre visible */
+    width: 100%; /* Ancho del 100% para que ocupe toda la ventana */
+    top: 0;
+    opacity: 87%;
+
+
+  
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco en enlaces de navegación */
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+#title {
+    margin-top: 20px;
+}
+
+/*
+BackBtn
+*/
+/* Estilos para el botón de regresar */
+.boton-regresar {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #580544;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .boton-regresar:hover {
+    background-color: #0077a3;
+  }
+
+
+
+  /*
+        SECCIONES DE TETRIS AMIGUIS
+
+  */
+
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 160px;
+}
+
+.seccion {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ff5733; /* Color de fondo de la sección */
+    border: 2px solid #000; /* Borde de la sección */
+}
+
+
+/*En este código, utilizamos animaciones CSS para animar las secciones a 
+medida que aparecen en la pantalla. Asegúrate de definir estas animaciones CSS 
+en tu archivo "blog.css" de la siguiente manera:
+Codigo de Referencia
+css  */
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*
+
+Voltear Cartas
+*/
+
+.seccion {
+    width: 200px;
+    height: 200px;
+    margin: 70px;
+    background-color: #ff5733;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.seccion.volteada {
+    transform: rotateY(180deg);
+    background:url('./hackers.jpg') no-repeat center center/cover ;
+}
+
+
